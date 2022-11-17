@@ -1,0 +1,26 @@
+{
+  "name": "@joe/components",
+  "version": "1.0.0",
+  "description": "common components created by joe",
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "author": "boyan <846184637@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/components.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://localhost:4879/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@joe/components.test.js"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@joe/core",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "boyan <846184637@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/core.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://localhost:4879/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@joe/core.test.js"
+  }
+}

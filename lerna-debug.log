@@ -8,7 +8,7 @@
 2 verbose rootPath /Users/anitacao/Desktop/Projects/私仓/yd-package
 3 info versioning independent
 4 verbose packageConfigs Package manager 'pnpm' detected. Resolving packages using 'pnpm-workspace.yaml'.
-5 verbose session 9d5777da08769adf
+5 verbose session dedfc3e3bd718af5
 6 verbose user-agent lerna/6.0.3/node@v16.16.0+x64 (darwin)
 7 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '6.0.3' }
 8 verbose rootPath /Users/anitacao/Desktop/Projects/私仓/yd-package
@@ -21,119 +21,117 @@
 15 silly isBehindUpstream
 16 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 1
 17 silly hasTags
-18 verbose hasTags false
-19 info Assuming all packages changed
-20 verbose updated @joe/components
-21 verbose updated @joe/core
-22 verbose updated @joe/utils
-23 verbose git-describe undefined => "de910fd"
-24 silly git-describe parsed => {"refCount":"2","sha":"de910fd","isDirty":false}
-25 info execute Skipping releases
-26 silly lifecycle No script for "preversion" in "yd-package", continuing
-27 silly lifecycle No script for "preversion" in "@joe/components", continuing
-28 silly lifecycle No script for "preversion" in "@joe/core", continuing
-29 silly lifecycle No script for "preversion" in "@joe/utils", continuing
-30 verbose version @joe/components has no lockfile. Skipping lockfile update.
-31 verbose version @joe/core has no lockfile. Skipping lockfile update.
-32 verbose version @joe/utils has no lockfile. Skipping lockfile update.
-33 silly lifecycle No script for "version" in "@joe/core", continuing
-34 silly lifecycle No script for "version" in "@joe/utils", continuing
-35 silly lifecycle No script for "version" in "@joe/components", continuing
-36 verbose version Updating root pnpm-lock.yaml
-37 silly lifecycle No script for "version" in "yd-package", continuing
-38 silly gitAdd [
-38 silly gitAdd   'packages/core/package.json',
-38 silly gitAdd   'packages/utils/package.json',
-38 silly gitAdd   'packages/components/package.json',
-38 silly gitAdd   'pnpm-lock.yaml'
-38 silly gitAdd ]
-39 silly gitCommit Publish
-39 silly gitCommit
-39 silly gitCommit  - @joe/components@1.0.1
-39 silly gitCommit  - @joe/core@1.0.1
-39 silly gitCommit  - @joe/utils@1.0.1
-40 verbose git [
-40 verbose git   'commit',
-40 verbose git   '-F',
-40 verbose git   '/private/var/folders/6w/6h79k7l97gb2clnw54bnq2c00000gn/T/bb8dbee4-1bcc-429c-b25e-49fefd584ea8/lerna-commit.txt'
-40 verbose git ]
-41 silly gitTag @joe/components@1.0.1
-42 verbose git [ 'tag', '@joe/components@1.0.1', '-m', '@joe/components@1.0.1' ]
-43 silly gitTag @joe/core@1.0.1
-44 verbose git [ 'tag', '@joe/core@1.0.1', '-m', '@joe/core@1.0.1' ]
-45 silly gitTag @joe/utils@1.0.1
-46 verbose git [ 'tag', '@joe/utils@1.0.1', '-m', '@joe/utils@1.0.1' ]
-47 silly lifecycle No script for "postversion" in "@joe/components", continuing
-48 silly lifecycle No script for "postversion" in "@joe/core", continuing
-49 silly lifecycle No script for "postversion" in "@joe/utils", continuing
-50 silly lifecycle No script for "postversion" in "yd-package", continuing
-51 info git Pushing tags...
-52 silly gitPush origin main
-53 info publish Publishing packages to npm...
-54 notice Skipping all user and access validation due to third-party registry
-55 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
-56 warn ENOLICENSE Packages @joe/components, @joe/core, and @joe/utils are missing a license.
-56 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
-56 warn ENOLICENSE See https://choosealicense.com for additional guidance.
-57 silly getCurrentSHA
-58 verbose getCurrentSHA d4116a3d13d8908814629d3a5f38e9f76351f92f
-59 silly lifecycle No script for "prepublish" in "yd-package", continuing
-60 silly lifecycle No script for "prepare" in "yd-package", continuing
-61 silly lifecycle No script for "prepublishOnly" in "yd-package", continuing
-62 silly lifecycle No script for "prepack" in "yd-package", continuing
-63 verbose pack-directory packages/components
-64 verbose pack-directory packages/core
-65 verbose pack-directory packages/utils
-66 silly lifecycle No script for "prepublish" in "@joe/components", continuing
-67 silly lifecycle No script for "prepublish" in "@joe/core", continuing
-68 silly lifecycle No script for "prepublish" in "@joe/utils", continuing
-69 silly lifecycle No script for "prepare" in "@joe/components", continuing
-70 silly lifecycle No script for "prepare" in "@joe/core", continuing
-71 silly lifecycle No script for "prepare" in "@joe/utils", continuing
-72 silly lifecycle No script for "prepublishOnly" in "@joe/components", continuing
-73 silly lifecycle No script for "prepublishOnly" in "@joe/utils", continuing
-74 silly lifecycle No script for "prepublishOnly" in "@joe/core", continuing
-75 silly lifecycle No script for "prepack" in "@joe/components", continuing
-76 silly lifecycle No script for "prepack" in "@joe/core", continuing
-77 silly lifecycle No script for "prepack" in "@joe/utils", continuing
-78 silly lifecycle No script for "postpack" in "@joe/components", continuing
-79 verbose packed packages/components
-80 silly lifecycle No script for "postpack" in "@joe/utils", continuing
-81 verbose packed packages/utils
-82 silly lifecycle No script for "postpack" in "@joe/core", continuing
-83 verbose packed packages/core
-84 silly lifecycle No script for "postpack" in "yd-package", continuing
-85 verbose publish @joe/components
-86 verbose publish @joe/core
-87 verbose publish @joe/utils
-88 silly FetchError: request to http://localhost:4879/@joe%2fcomponents failed, reason: connect ECONNREFUSED 127.0.0.1:4879
-88 silly     at ClientRequest.<anonymous> (/Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/minipass-fetch@2.1.2/node_modules/minipass-fetch/lib/index.js:130:14)
-88 silly     at ClientRequest.emit (node:events:527:28)
-88 silly     at Socket.socketErrorListener (node:_http_client:454:9)
-88 silly     at Socket.emit (node:events:539:35)
-88 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-88 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-88 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
-88 silly  FetchError: request to http://localhost:4879/@joe%2fcomponents failed, reason: connect ECONNREFUSED 127.0.0.1:4879
-88 silly     at ClientRequest.<anonymous> (/Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/minipass-fetch@2.1.2/node_modules/minipass-fetch/lib/index.js:130:14)
-88 silly     at ClientRequest.emit (node:events:527:28)
-88 silly     at Socket.socketErrorListener (node:_http_client:454:9)
-88 silly     at Socket.emit (node:events:539:35)
-88 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-88 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-88 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
-88 silly   code: 'ECONNREFUSED',
-88 silly   errno: 'ECONNREFUSED',
-88 silly   syscall: 'connect',
-88 silly   address: '127.0.0.1',
-88 silly   port: 4879,
-88 silly   type: 'system'
-88 silly }
-89 error ECONNREFUSED request to http://localhost:4879/@joe%2fcomponents failed, reason: connect ECONNREFUSED 127.0.0.1:4879
-90 error FetchError: request to http://localhost:4879/@joe%2fcomponents failed, reason: connect ECONNREFUSED 127.0.0.1:4879
-90 error     at ClientRequest.<anonymous> (/Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/minipass-fetch@2.1.2/node_modules/minipass-fetch/lib/index.js:130:14)
-90 error     at ClientRequest.emit (node:events:527:28)
-90 error     at Socket.socketErrorListener (node:_http_client:454:9)
-90 error     at Socket.emit (node:events:539:35)
-90 error     at emitErrorNT (node:internal/streams/destroy:157:8)
-90 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+18 verbose hasTags true
+19 silly git-describe.sync "@joe/components@1.0.1-1-g89d9519" => {"lastTagName":"@joe/components@1.0.1","lastVersion":"1.0.1","refCount":"1","sha":"89d9519","isDirty":false}
+20 info Looking for changed packages since @joe/components@1.0.1
+21 silly checking diff packages/components
+22 silly found diff in packages/components/package.json
+23 verbose filtered diff [ 'packages/components/package.json' ]
+24 silly checking diff packages/core
+25 silly found diff in packages/core/package.json
+26 verbose filtered diff [ 'packages/core/package.json' ]
+27 silly checking diff packages/utils
+28 silly found diff in packages/utils/lib/utils.js
+28 silly found diff in packages/utils/package.json
+29 verbose filtered diff [ 'packages/utils/lib/utils.js', 'packages/utils/package.json' ]
+30 verbose updated @joe/components
+31 verbose updated @joe/core
+32 verbose updated @joe/utils
+33 verbose git-describe undefined => "@joe/components@1.0.1-1-g89d9519"
+34 silly git-describe parsed => {"lastTagName":"@joe/components@1.0.1","lastVersion":"1.0.1","refCount":"1","sha":"89d9519","isDirty":false}
+35 info execute Skipping releases
+36 silly lifecycle No script for "preversion" in "yd-package", continuing
+37 silly lifecycle No script for "preversion" in "@joe/components", continuing
+38 silly lifecycle No script for "preversion" in "@joe/core", continuing
+39 silly lifecycle No script for "preversion" in "@joe/utils", continuing
+40 verbose version @joe/components has no lockfile. Skipping lockfile update.
+41 verbose version @joe/core has no lockfile. Skipping lockfile update.
+42 verbose version @joe/utils has no lockfile. Skipping lockfile update.
+43 silly lifecycle No script for "version" in "@joe/components", continuing
+44 silly lifecycle No script for "version" in "@joe/utils", continuing
+45 silly lifecycle No script for "version" in "@joe/core", continuing
+46 verbose version Updating root pnpm-lock.yaml
+47 silly lifecycle No script for "version" in "yd-package", continuing
+48 silly gitAdd [
+48 silly gitAdd   'packages/components/package.json',
+48 silly gitAdd   'packages/utils/package.json',
+48 silly gitAdd   'packages/core/package.json',
+48 silly gitAdd   'pnpm-lock.yaml'
+48 silly gitAdd ]
+49 silly gitCommit Publish
+49 silly gitCommit
+49 silly gitCommit  - @joe/components@1.0.2
+49 silly gitCommit  - @joe/core@1.0.2
+49 silly gitCommit  - @joe/utils@1.0.2
+50 verbose git [
+50 verbose git   'commit',
+50 verbose git   '-F',
+50 verbose git   '/private/var/folders/6w/6h79k7l97gb2clnw54bnq2c00000gn/T/b37aae11-8e7a-4f68-b09e-fa22c59ad6c3/lerna-commit.txt'
+50 verbose git ]
+51 silly gitTag @joe/components@1.0.2
+52 verbose git [ 'tag', '@joe/components@1.0.2', '-m', '@joe/components@1.0.2' ]
+53 silly gitTag @joe/core@1.0.2
+54 verbose git [ 'tag', '@joe/core@1.0.2', '-m', '@joe/core@1.0.2' ]
+55 silly gitTag @joe/utils@1.0.2
+56 verbose git [ 'tag', '@joe/utils@1.0.2', '-m', '@joe/utils@1.0.2' ]
+57 silly lifecycle No script for "postversion" in "@joe/components", continuing
+58 silly lifecycle No script for "postversion" in "@joe/core", continuing
+59 silly lifecycle No script for "postversion" in "@joe/utils", continuing
+60 silly lifecycle No script for "postversion" in "yd-package", continuing
+61 info git Pushing tags...
+62 silly gitPush origin main
+63 info publish Publishing packages to npm...
+64 notice Skipping all user and access validation due to third-party registry
+65 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+66 warn ENOLICENSE Packages @joe/components, @joe/core, and @joe/utils are missing a license.
+66 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+66 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+67 silly getCurrentSHA
+68 verbose getCurrentSHA 879022d1ce237b6759cf9a38f34c2d048833c365
+69 silly lifecycle No script for "prepublish" in "yd-package", continuing
+70 silly lifecycle No script for "prepare" in "yd-package", continuing
+71 silly lifecycle No script for "prepublishOnly" in "yd-package", continuing
+72 silly lifecycle No script for "prepack" in "yd-package", continuing
+73 verbose pack-directory packages/components
+74 verbose pack-directory packages/core
+75 verbose pack-directory packages/utils
+76 silly lifecycle No script for "prepublish" in "@joe/components", continuing
+77 silly lifecycle No script for "prepublish" in "@joe/core", continuing
+78 silly lifecycle No script for "prepublish" in "@joe/utils", continuing
+79 silly lifecycle No script for "prepare" in "@joe/components", continuing
+80 silly lifecycle No script for "prepare" in "@joe/core", continuing
+81 silly lifecycle No script for "prepare" in "@joe/utils", continuing
+82 silly lifecycle No script for "prepublishOnly" in "@joe/components", continuing
+83 silly lifecycle No script for "prepublishOnly" in "@joe/utils", continuing
+84 silly lifecycle No script for "prepublishOnly" in "@joe/core", continuing
+85 silly lifecycle No script for "prepack" in "@joe/components", continuing
+86 silly lifecycle No script for "prepack" in "@joe/utils", continuing
+87 silly lifecycle No script for "prepack" in "@joe/core", continuing
+88 silly lifecycle No script for "postpack" in "@joe/components", continuing
+89 verbose packed packages/components
+90 silly lifecycle No script for "postpack" in "@joe/utils", continuing
+91 verbose packed packages/utils
+92 silly lifecycle No script for "postpack" in "@joe/core", continuing
+93 verbose packed packages/core
+94 silly lifecycle No script for "postpack" in "yd-package", continuing
+95 error Error: Cannot find module 'hosted-git-info'
+95 error Require stack:
+95 error - /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/npm-package-arg@8.1.1/node_modules/npm-package-arg/npa.js
+95 error - /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/@lerna+package-graph@6.0.3/node_modules/@lerna/package-graph/index.js
+95 error - /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/@lerna+query-graph@6.0.3/node_modules/@lerna/query-graph/query-graph.js
+95 error - /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/@lerna+listable@6.0.3/node_modules/@lerna/listable/lib/listable-format.js
+95 error - /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/@lerna+listable@6.0.3/node_modules/@lerna/listable/index.js
+95 error - /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/@lerna+changed@6.0.3/node_modules/@lerna/changed/command.js
+95 error - /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/lerna@6.0.3/node_modules/lerna/index.js
+95 error - /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/lerna@6.0.3/node_modules/lerna/cli.js
+95 error - /Users/anitacao/.config/yarn/global/node_modules/import-local/index.js
+95 error - /Users/anitacao/.config/yarn/global/node_modules/lerna/cli.js
+95 error     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+95 error     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+95 error     at Module.require (node:internal/modules/cjs/loader:1005:19)
+95 error     at require (node:internal/modules/cjs/helpers:102:18)
+95 error     at resolve (/Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/npm-package-arg@8.1.1/node_modules/npm-package-arg/npa.js:75:31)
+95 error     at npa (/Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/npm-package-arg@8.1.1/node_modules/npm-package-arg/npa.js:55:10)
+95 error     at npmPublish (/Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/@lerna+npm-publish@6.0.3/node_modules/@lerna/npm-publish/npm-publish.js:52:21)
+95 error     at /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/@lerna+publish@6.0.3_nx@15.1.1+typescript@4.9.3/node_modules/@lerna/publish/index.js:770:32
+95 error     at /Users/anitacao/Desktop/Projects/私仓/yd-package/node_modules/.pnpm/p-pipe@3.1.0/node_modules/p-pipe/index.js:12:25

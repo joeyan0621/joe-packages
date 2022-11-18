@@ -1,6 +1,6 @@
 {
   "name": "@joe/components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "common components created by joe",
   "keywords": [
     "react",
@@ -25,6 +25,6 @@
   },
   "gitHead": "879022d1ce237b6759cf9a38f34c2d048833c365",
   "dependencies": {
-    "@joe/core": "workspace:^1.0.3"
+    "@joe/core": "workspace:^1.0.4"
   }
 }

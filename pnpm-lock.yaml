@@ -4,16 +4,12 @@ importers:
 
   .:
     specifiers:
-      '@joe/components': workspace:^1.0.3
-      '@joe/core': link:packages/core
       lerna: ^6.0.3
       nx: ^15.1.1
       react: ^18.2.0
       react-dom: ^18.2.0
       typescript: ^4.9.3
     dependencies:
-      '@joe/components': link:packages/components
-      '@joe/core': link:packages/core
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -23,9 +19,15 @@ importers:
 
   packages/components:
     specifiers:
-      '@joe/core': workspace:^1.0.3
+      '@joe/core': workspace:^1.0.4
     dependencies:
       '@joe/core': link:../core
+
+  packages/core:
+    specifiers: {}
+
+  packages/utils:
+    specifiers: {}
 
 packages:
 

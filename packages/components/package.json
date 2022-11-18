@@ -23,5 +23,8 @@
   "scripts": {
     "test": "node ./__tests__/@joe/components.test.js"
   },
-  "gitHead": "879022d1ce237b6759cf9a38f34c2d048833c365"
+  "gitHead": "879022d1ce237b6759cf9a38f34c2d048833c365",
+  "dependencies": {
+    "@joe/core": "workspace:^1.0.3"
+  }
 }
